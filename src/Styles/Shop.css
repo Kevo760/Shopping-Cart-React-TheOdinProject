@@ -1,0 +1,39 @@
+.shop-page {
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    padding-top: 4rem;
+    overflow: auto;
+}
+
+.shop-banner {
+    text-align: center;
+    width: 100%;
+    height: 8rem;
+}
+
+.shop-banner h1 {
+    background-image: url('../Files/images/shop-banner.png');
+    background-position-y: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.products-section {
+    padding: 2rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}

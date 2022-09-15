@@ -18,6 +18,7 @@ function Main() {
       muted 
       playsInline 
       src={vidBackground}
+      id='vid-background'
       >
 
       </video>

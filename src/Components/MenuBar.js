@@ -1,16 +1,17 @@
 import React from 'react';
 import '../Styles/MenuBar.css';
 import { HiOutlineShoppingBag } from 'react-icons/hi'
+import { Link } from 'react-router-dom';
 
 
 function MenuBar() {
   return (
     <nav className='menu-bar'>
-        <h1 className='site-name'>Enraged</h1>
+        <h1 className='site-name'>ENRAGED</h1>
 
         <div className='link-section'>
-          <p>Home</p>
-          <p>Shop</p>
+          <Link to='/'>Home</Link>
+          <Link to='/shop'>Shop</Link>
         </div>
         
         <div className='cart-section'>
