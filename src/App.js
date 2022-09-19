@@ -13,6 +13,7 @@ import { Route, Routes, BrowserRouter as Router} from 'react-router-dom';
 import Cart from './Components/CartBar/Cart';
 import Shop from './Components/ShopSection/Shop';
 import { useState } from 'react';
+import BuckedUpPage from './Components/ProductPage/BuckedUpPage';
 
 function App() {
   const products = [
@@ -88,7 +89,7 @@ function App() {
     <Router>
       <div className="App">
         <MenuBar />
-        <Shop products={products} />
+        <BuckedUpPage products={products}/>
         {/* <Routes>
           <Route path='/' element={<MainPage />}/>
         </Routes> */}
