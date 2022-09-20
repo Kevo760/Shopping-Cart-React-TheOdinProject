@@ -15,24 +15,32 @@
     flex-wrap: wrap;
     width: 50rem;
     justify-content: center;
+    padding-top: 4rem;
 }
 
 .product-page img {
-    width: 30rem;
+    width: 25rem;
     max-width: 100%;
 }
+
 
 .product-page-info {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    width: 20rem;
+    width: 25rem;
     gap: .5rem;
+    max-width: 100%;
 }
 
 .product-page-price {
     border-bottom: silver 1px solid;
     padding-bottom: 1rem;
+}
+
+.product-page-description {
+    padding: 1rem 0 1rem 0;
+    font-size: 14px;
 }
 
 .product-page-btns {
@@ -68,3 +76,5 @@
     background-color: rgb(0, 0, 0);
     color: white;
 }
+
+

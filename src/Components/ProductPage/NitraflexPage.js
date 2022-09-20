@@ -1,9 +1,10 @@
 import React from 'react';
 import '../../Styles/ProductPage.css';
 
-function BuckedUpPage(props) {
+
+function NitraflexPage(props) {
     const { products } = props
-    const product = products.find(product => product.name === 'Bucked Up')
+    const product = products.find(product => product.name === 'Nitraflex')
 
   return (
     <div className='product-page'>
@@ -28,4 +29,4 @@ function BuckedUpPage(props) {
   )
 }
 
-export default BuckedUpPage
+export default NitraflexPage

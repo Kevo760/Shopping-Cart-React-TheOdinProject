@@ -10,8 +10,8 @@ function MenuBar() {
         <h1 className='site-name'>ENRAGED</h1>
 
         <div className='link-section'>
-          <Link to='/'>Home</Link>
-          <Link to='/shop'>Shop</Link>
+          <Link to='/' className='link'>Home</Link>
+          <Link to='/shop' className='link'>Shop</Link>
         </div>
         
         <div className='cart-section'>

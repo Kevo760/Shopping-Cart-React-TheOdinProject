@@ -14,6 +14,14 @@ import Cart from './Components/CartBar/Cart';
 import Shop from './Components/ShopSection/Shop';
 import { useState } from 'react';
 import BuckedUpPage from './Components/ProductPage/BuckedUpPage';
+import C4Page from './Components/ProductPage/C4Page';
+import GhostPage from './Components/ProductPage/GhostPage';
+import NitraflexPage from './Components/ProductPage/NitraflexPage';
+import PrehdPage from './Components/ProductPage/PrehdPage';
+import ThavagePage from './Components/ProductPage/ThavagePage';
+import TotalWarPage from './Components/ProductPage/TotalWarPage';
+import WokeAfPage from './Components/ProductPage/WokeAfPage';
+
 
 function App() {
   const products = [
@@ -23,7 +31,8 @@ function App() {
       image: buckedup,
       type: 'Preworkout',
       price: 39.99,
-      quantity: 0
+      quantity: 0,
+      link: '/shop/buckedup'
     },
     {
       name:'C4',
@@ -31,7 +40,8 @@ function App() {
       image: c4,
       type: 'Preworkout',
       price: 39.99,
-      quantity: 0
+      quantity: 0,
+      link: '/shop/c4'
     },
     {
       name:'Ghost',
@@ -39,7 +49,8 @@ function App() {
       image: ghost,
       type: 'Preworkout',
       price: 39.99,
-      quantity: 0
+      quantity: 0,
+      link: '/shop/ghost'
     },
     {
       name:'Nitraflex',
@@ -47,7 +58,8 @@ function App() {
       image: nitraflex,
       type: 'Preworkout',
       price: 29.99,
-      quantity: 0
+      quantity: 0,
+      link: '/shop/nitraflex'
     },
     {
       name:'Prehd',
@@ -55,7 +67,8 @@ function App() {
       image: prehd,
       type: 'Preworkout',
       price: 29.99,
-      quantity: 0
+      quantity: 0,
+      link: '/shop/prehd'
     },
     {
       name:'Thavage',
@@ -63,7 +76,8 @@ function App() {
       image: thavage,
       type: 'Preworkout',
       price: 49.99,
-      quantity: 0
+      quantity: 0,
+      link: '/shop/thavage'
     },
     {
       name:'Total War',
@@ -71,7 +85,8 @@ function App() {
       image: totalwar,
       type: 'Preworkout',
       price: 49.99,
-      quantity: 0
+      quantity: 0,
+      link: '/shop/totalwar'
     },
     {
       name:'Woke AF',
@@ -79,7 +94,8 @@ function App() {
       image: wokeaf,
       type: 'Preworkout',
       price: 59.99,
-      quantity: 0
+      quantity: 0,
+      link: '/shop/wokeaf'
     }
   ]
 
@@ -89,10 +105,18 @@ function App() {
     <Router>
       <div className="App">
         <MenuBar />
-        <BuckedUpPage products={products}/>
-        {/* <Routes>
+        <Routes>
           <Route path='/' element={<MainPage />}/>
-        </Routes> */}
+          <Route path='/shop' element={<Shop products={products} />}/>
+          <Route path='/shop/buckedup' element={<BuckedUpPage products={products} />}/>
+          <Route path='/shop/c4' element={<C4Page products={products} />}/>
+          <Route path='/shop/ghost' element={<GhostPage products={products}/>}/>
+          <Route path='/shop/nitraflex' element={<NitraflexPage products={products} />} />
+          <Route path='/shop/prehd' element={<PrehdPage products={products} />}/>
+          <Route path='/shop/thavage' element={<ThavagePage products={products} />} />
+          <Route path='/shop/totalwar' element={<TotalWarPage products={products} />} />
+          <Route path='/shop/wokeaf' element={<WokeAfPage products={products} />} />
+        </Routes>
         
       </div>
     </Router>

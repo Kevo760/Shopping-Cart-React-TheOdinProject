@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../Styles/ProductPage.css';
 
-function BuckedUpPage(props) {
+function PrehdPage(props) {
     const { products } = props
-    const product = products.find(product => product.name === 'Bucked Up')
+    const product = products.find(product => product.name === 'Prehd')
 
   return (
     <div className='product-page'>
@@ -28,4 +28,4 @@ function BuckedUpPage(props) {
   )
 }
 
-export default BuckedUpPage
+export default PrehdPage
