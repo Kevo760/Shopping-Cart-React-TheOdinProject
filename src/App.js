@@ -99,12 +99,24 @@ function App() {
     }
   ]
 
-  const { cart, setCart } = useState([]);
+  const [ cart, setCart ] = useState([]);
+
+  const [ showCart, setShowCart ] = useState(false);
+
+  const showCartToggle = () => {
+    setShowCart(prevState => prevState = !showCart)
+  }
 
   return (
     <Router>
       <div className="App">
-        <MenuBar />
+        <MenuBar showCartToggle={showCartToggle}/>
+        {
+          showCart ?
+          <Cart showCartToggle={showCartToggle}/>
+          :
+          null
+        }
         <Routes>
           <Route path='/' element={<MainPage />}/>
           <Route path='/shop' element={<Shop products={products} />}/>

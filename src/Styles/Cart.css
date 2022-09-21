@@ -11,14 +11,26 @@
     top: 0;
     right: 0;
     padding: 1rem;
-    width: 25vw;
     height: 100%;
-    background-color: aliceblue;
+    width: 25rem;
+    background-color: whitesmoke;
     z-index: 0;
+    animation-name: cartEffect;
+    animation-duration: 500ms;
 }
 
 .close-icon {
     font-size: 2rem;
     float: right;
     cursor: pointer;
+}
+
+@keyframes cartEffect {
+    from {
+        width: 0;
+        padding: 0;
+    }
+    to {
+        width: 25rem;
+    }
 }

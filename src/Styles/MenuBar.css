@@ -8,29 +8,58 @@
     color: white;
     background-color: dodgerblue;
     align-items: center;
-    justify-content: space-between;
+}
+
+.menu-bar .link {
+    display: block;
+    position: relative;
+}
+
+.menu-bar .link::before {
+    transition: 400ms;
+    content: "";
+    height: 5px;
+    width: 0%;
+    top: 1.5rem;
+    position: absolute;
+    background-color: white;
+}
+
+.menu-bar .link:hover::before {
+    width: 100%;
+}
+
+.menu-flex-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .site-name {
     font-family: 'airstrike';
-    font-size: 2rem;
-    left: 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: inherit;
 }
 
 .link-section {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: auto;
 }
 
-
+.cart-section {
+    margin-left: auto;
+}
 
 .bag-icon {
     scale: 1.5;
     z-index: 0;
+    cursor: pointer;
+    width: 1rem;
 }
 
 .item-amount-icon {
