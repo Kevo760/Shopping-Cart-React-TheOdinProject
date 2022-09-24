@@ -1,0 +1,26 @@
+.productAmountBtn {
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.productAmountBtn button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid grey;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.productAmountBtn button:hover {
+    background-color: black;
+    color: white;
+}
+
+.productAmountBtn-quantity {
+    width: 2.5rem;
+    height: 1.5rem;
+    border: 1px solid grey;
+}

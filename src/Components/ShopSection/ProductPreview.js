@@ -9,7 +9,7 @@ function ProductPreview(props) {
   return (
     <Link to={product.link} className='link'>
     <div className='product-preview'>
-        <img src={product.image} alt='product image' />
+        <img src={product.image} alt='product' />
         <span className='preview-name'>{product.name}</span>
         <span className='preview-type'>{product.type}</span>
         <span className='preview-price'>${product.price}</span>

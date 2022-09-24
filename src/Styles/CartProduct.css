@@ -1,0 +1,32 @@
+.cart-product {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    border-bottom: 1px grey solid;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.cart-product-img img {
+    width: 5rem;
+}
+
+.cart-product-name {
+    font-weight: bold;
+}
+
+.cart-product-type, .cart-product-price {
+    font-size: .8rem;
+}
+
+.cart-product-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-product-total {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
