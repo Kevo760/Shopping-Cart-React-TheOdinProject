@@ -56,7 +56,7 @@
 }
 
 .bag-icon {
-    scale: 1.5;
+    scale: 1.8;
     z-index: 0;
     cursor: pointer;
     width: 1rem;
@@ -64,8 +64,8 @@
 
 .item-amount-icon {
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     background-color: black;
     display: flex;
     align-items: center;
@@ -73,7 +73,7 @@
     border-radius: 50%;
     font-size: 10px;
     z-index: 1;
-    transform: translate(60%, -20%);
+    transform: translate(40%, -30%);
 }
 
 @font-face {

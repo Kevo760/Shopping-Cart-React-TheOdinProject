@@ -15,6 +15,16 @@ describe('ProductAmount Btn Renders', () => {
         link: '/shop/buckedup'
       };
 
+      const productOne = {
+        name:'Bucked Up',
+        id: 1,
+        image: buckedup,
+        type: 'Preworkout',
+        price: 39.99,
+        quantity: 1,
+        link: '/shop/buckedup'
+      };
+
     test('Renders - button', () => {
         render(<ProductAmountBtn product={product} />);
         const minusBtn = screen.getByRole('button', {
@@ -35,5 +45,13 @@ describe('ProductAmount Btn Renders', () => {
         render(<ProductAmountBtn product={product} />);
         const productAmountText = screen.getByText('10');
         expect(productAmountText).toBeInTheDocument();
+    })
+
+    test('- button is disabled when product is one', () => {
+        render(<ProductAmountBtn product={productOne}/>);
+        const disabledMinusBtn = screen.getByRole('button', {
+            name: '-',
+        })
+        expect(disabledMinusBtn).toBeDisabled()
     })
 })

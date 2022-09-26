@@ -3,7 +3,7 @@ import MenuBar from './MenuBar';
 
 describe('MenuBar', () => {
     test('Website name renders', () => {
-        render(<MenuBar />)
+        render(<MenuBar/>)
         const WebsiteName = screen.getByText('ENRAGED');
         expect(WebsiteName).toBeInTheDocument();
     })

@@ -24,6 +24,18 @@
     flex-direction: column;
 }
 
+.cart-product-remove {
+    margin-top: .3rem;
+    display: flex;
+    flex-direction: row;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.cart-product-remove-icon {
+    font-size: 1rem;
+}
+
 .cart-product-total {
     margin-left: auto;
     display: flex;

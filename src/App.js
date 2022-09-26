@@ -112,7 +112,7 @@ function App() {
       addQuantity(findProduct)
     }
     showCartToggle()
-  }
+  };
 
 
   const addQuantity = (product) => {
@@ -122,7 +122,7 @@ function App() {
       }
       return item
     }))
-  }
+  };
 
   const subtractQuantity = (product) => {
     setCart(prevState => prevState.map(item => {
@@ -131,7 +131,12 @@ function App() {
       }
       return item
     }))
-  }
+  };
+
+  const removeProduct = (product) => {
+    const newCart = cart.filter(item => item.id !== product.id)
+    setCart(prevState => prevState = newCart)
+  };
 
 
 
@@ -139,18 +144,41 @@ function App() {
 
   const showCartToggle = () => {
     setShowCart(prevState => prevState = !showCart)
-    console.log(cart)
   };
 
+  const [ cartTotalPrice, setCartTotalPrice ] = useState(0);
+
+  const calculateCartTotal = () => {
+    let totalItemPrice = 0
+    //if cart length is 0 set cartTotalPrice to 0 else calculate total price
+    if(cart.length === 0) {
+      setCartTotalPrice(0)
+    } else {
+      for(let i = 0; i < cart.length; i++) {
+        totalItemPrice += cart[i].price * cart[i].quantity
+       }
+    }
+
+    setCartTotalPrice(totalItemPrice.toFixed(2))
+    // Updates the cart Quanity
+    updateCartQuantity();
+  };
+
+  const [ cartQuantity, setCartQuantity ] = useState(0);
+
+  const updateCartQuantity = () => {
+    const quantity = cart.reduce((a, b) => a + b.quantity, 0)
+    setCartQuantity(prevState => prevState = quantity)
+  }
 
 
   return (
     <Router>
       <div className="App">
-        <MenuBar showCartToggle={showCartToggle}/>
+        <MenuBar showCartToggle={showCartToggle} cartQuantity={cartQuantity}/>
         {
           showCart ?
-          <Cart showCartToggle={showCartToggle} cart={cart} addQuantity={addQuantity} subtractQuantity={subtractQuantity}/>
+          <Cart cartTotalPrice={cartTotalPrice} calculateCartTotal={calculateCartTotal} showCartToggle={showCartToggle} cart={cart} addQuantity={addQuantity} subtractQuantity={subtractQuantity} removeProduct={removeProduct}/>
           :
           null
         }

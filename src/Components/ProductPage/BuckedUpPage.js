@@ -2,7 +2,7 @@ import React from 'react';
 import '../../Styles/ProductPage.css';
 
 function BuckedUpPage(props) {
-    const { products, addToCart, addQuantity } = props
+    const { products, addToCart } = props
     const product = products.find(product => product.name === 'Bucked Up')
 
   return (

@@ -10,7 +10,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     height: 100%;
     width: 30rem;
     background-color: whitesmoke;
@@ -69,11 +69,22 @@
     overflow: auto;
 }
 
+.cart-empty {
+    margin-top: -5rem;
+    text-align: center;
+}
+
 @keyframes cartEffect {
     from {
         translate: 50%;
     }
     to {
         translate: 0%;
+    }
+}
+
+@media (max-width: 600px) {
+    .cart-bar {
+        width: 100%;
     }
 }

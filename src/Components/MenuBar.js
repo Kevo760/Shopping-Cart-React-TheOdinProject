@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 function MenuBar(props) {
-  const { showCartToggle } = props
-  const showCartAmount = false;
+  const { showCartToggle, cartQuantity } = props
 
   return (
     <nav className='menu-bar'>
@@ -19,8 +18,8 @@ function MenuBar(props) {
           </div>
         
           <div className='cart-section'>
-            { showCartAmount ?
-              <p className='item-amount-icon'>0</p>
+            { cartQuantity > 0 ?
+              <p className='item-amount-icon'>{cartQuantity}</p>
               :
               null
             }
