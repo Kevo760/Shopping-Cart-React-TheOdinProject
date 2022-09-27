@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Shopping-Cart-React-TheOdinProject/static/css/main.ee6568de.css",
+    "main.js": "/Shopping-Cart-React-TheOdinProject/static/js/main.bf386c24.js",
+    "static/js/787.f1269566.chunk.js": "/Shopping-Cart-React-TheOdinProject/static/js/787.f1269566.chunk.js",
+    "static/media/bg.mp4": "/Shopping-Cart-React-TheOdinProject/static/media/bg.20806b058eb98ff616f5.mp4",
+    "static/media/shop-banner.png": "/Shopping-Cart-React-TheOdinProject/static/media/shop-banner.3fd76d2ca46c576cbd19.png",
+    "static/media/c4.png": "/Shopping-Cart-React-TheOdinProject/static/media/c4.95a00a70b3b1e7ea6f28.png",
+    "static/media/ghost.png": "/Shopping-Cart-React-TheOdinProject/static/media/ghost.654ab26d2439c86d2997.png",
+    "static/media/nitraflex.png": "/Shopping-Cart-React-TheOdinProject/static/media/nitraflex.309f231df55c4729e69d.png",
+    "static/media/totalwar.png": "/Shopping-Cart-React-TheOdinProject/static/media/totalwar.f509678eb8e25740eb68.png",
+    "static/media/wokeaf.png": "/Shopping-Cart-React-TheOdinProject/static/media/wokeaf.f32bcc7f6821614bbeb5.png",
+    "static/media/thavage.png": "/Shopping-Cart-React-TheOdinProject/static/media/thavage.21723ecbfe97c2c72be0.png",
+    "static/media/prehd.png": "/Shopping-Cart-React-TheOdinProject/static/media/prehd.3300aa1fcbd4a49cc41c.png",
+    "static/media/buckedup.png": "/Shopping-Cart-React-TheOdinProject/static/media/buckedup.7677bc08ee66f29512dd.png",
+    "static/media/airstrike.ttf": "/Shopping-Cart-React-TheOdinProject/static/media/airstrike.192a92c5c29bdd36bc83.ttf",
+    "index.html": "/Shopping-Cart-React-TheOdinProject/index.html",
+    "main.ee6568de.css.map": "/Shopping-Cart-React-TheOdinProject/static/css/main.ee6568de.css.map",
+    "main.bf386c24.js.map": "/Shopping-Cart-React-TheOdinProject/static/js/main.bf386c24.js.map",
+    "787.f1269566.chunk.js.map": "/Shopping-Cart-React-TheOdinProject/static/js/787.f1269566.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee6568de.css",
+    "static/js/main.bf386c24.js"
+  ]
+}
