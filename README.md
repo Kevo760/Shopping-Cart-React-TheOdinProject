@@ -41,7 +41,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/TheLegend760/Shopping-Cart-React-TheOdinProject]
-- Live Site URL: [Add live site URL here]
+- Live Site URL: [https://thelegend760.github.io/]
 
 ## My process
 
