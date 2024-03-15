@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/TheLegend760/Shopping-Cart-React-TheOdinProject]
-- Live Site URL: [https://thelegend760.github.io/Shopping-Cart-React-TheOdinProject/]
+- Solution URL: [https://github.com/Kevo760/Shopping-Cart-React-TheOdinProject]
+- Live Site URL: [https://Kevo760.github.io/Shopping-Cart-React-TheOdinProject/]
 
 ## My process
 
